@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+.text-title{
+    font-size: 3.2vw;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.text-big-white{
+    color: white;
+    font-size: 2.5vw;
+}
+
+.text-small-gray{
+    color: gray;
+    font-size: 1.4vw;
+}
+
+.text-medium-gray{
+    color: gray;
+    font-size: 1.8vw;
+}
+
+.white-button{
+    font-size: 1.2vw;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 1vw 2vw 1vw 2vw;
+    position: relative;
+}
+
+.white-button::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.3vw;
+    background-color: black;
+    transition: 1s;
+}
+
+.white-button:active{
+    background-color: rgb(178, 178, 178);
+}
+
+.white-button:hover::after{
+    width: 100%;
+}
+
+.page-intro{
+    position: relative;
+    height: 57vw;
+}
+
+.page-intro video{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page-intro header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 5vw;
+}
+
+.page-intro header div{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+.page-intro_intro{
+    position: absolute;
+    width: 60%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-intro header div img{
+    width: 5vw;
+}
+
+.page-intro_logo{
+    width: 10vw;
+}
+
+.gameplay-intro{
+    margin-top: 100px;
+}
+
+.gameplay-intro_content{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gameplay-intro_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 44%;
+}
+
+.gameplay-intro_element{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.gameplay-intro_element img{
+    width: 44%;
+}
+
+.gameplay-intro_element:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.gameplay-intro_element:nth-child(2) div{
+    margin-left: 3vw;
+}
+
+#gameplay-intro_dots{
+    width: 100%;
+}
+
+.hollow-knight-youtube{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.hollow-knight-youtube iframe{
+    width: 100%;
+    height: 57vw;
+}
+
+.other-sites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 30px;
+}
+
+.other-sites a{
+    width: 30%;
+}
+
+.other-sites img{
+    width: 100%;
+}
+
+.content-packs_content{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5vw;
+}
+
+.content-packs_content div{
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+    width: 22%;
+}
+
+.content-packs_content div p{
+    text-align: center;
+}
+
+.content-packs_content div p:first-child{
+    color: white;
+}
+
+.content-packs_content div img{
+    width: 100%;
+}
+
+.orchestral-score{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orchestral-score div{
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 7vw;
+}
+
+.orchestral-score img{
+    width: 44%;
+}
+
+.gameplay-preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 4vw;
+}
+
+.gameplay-preview div{
+    background-image: url(./images/gameplay.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: image-swap;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    width: 80%;
+    height: 45.2vw;
+}
+
+.VISIT{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    font-size: 20px;
+}
+.partners-discription{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+
+
+}
+.partners-discription img{
+    width: 100%;
+    height: 60%;
+
+}
+
+.partners-discription p{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+
+}
+
+
+
+
+.partners-discription-button{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}
+.partners-discription-button_button{
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 100%;
+    max-width: 283px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+@keyframes image-swap{
+    0%{
+        background-image: url(./images/gameplay.jpg);
+    }
+    
+    25%{
+        background-image: url(./images/forgotten-kingdom.jpg);
+    }
+    
+    50%{
+        background-image: url(./images/paintmaster.webp);
+    }
+    
+    75%{
+        background-image: url(./images/white-palace.webp);
+    }
+    
+    100%{
+        background-image: url(./images/grimm.webp);
+    }
+}
+
+.gameplay-preview a{
+    font-size: 2vw;
+    color: gray;
+}
+
+
+.our-friends_options div p{
+    text-align: center;
+}
+
+.our-friends_options .white-button{
+    margin-top: 3vw;
+}
+
+.our-friends_options img{
+    width: 100%;
+}
+
+.press-coverage{
+    margin-top: 120px;
+}
+
+.press-coverage_our-awards{
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.press-coverage_our-awards div p:last-child{
+    margin-left: 3vw;
+    margin-top: 20px;
+}
+
+.our-awards{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20vw;
+}
+
+.our-awards img{
+    width: 50%;
+}
+
+.press-coverage_press-kit{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 180px;
+}
+
+.press-coverage_press-kit div{
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3vw;
+}
+
+.press-coverage_press-kit img{
+    width: 44%;
+}
+
+.press-coverage_press-kit h2{
+    color: gray;
+    opacity: none;
+}
+
+.press-coverage_press-kit p{
+    color: grey;
+}
+
+.press-coverage_press-kit div a:first-child{
+    color: gray;
+}
+
+.disclaimer{
+    max-width: 266px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.made-with{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0 40px 0;
+    background-image: url(./images/background-knight.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.made-with p,
+.made-with img{
+    max-width: 80%;
+    text-align: center;
+}
+
+.creators{
+    background-color: #f03444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 0 70px 0;
+}
+
+.creators p{
+    color: white;
+}
+
+.creators_team-cherry{
+    max-width: 450px;
+    width: 100%;
+}
+
+.creators_description{
+    font-size: 14px;
+    font-weight: 100;
+    width: 60%;
+    text-align: center;
+}
+
+.creators_creators{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.creators_creators div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.creators_creators div h2{
+    text-align: center;
+    color: white;
+}
+
+.creators_creators div p{
+    height:40%;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.creators_creators div img{
+    width: 100%;
+    max-width: 237.83;
+}
+
+.creators_media img{
+    border-radius: 50%;
+}
+
+.creators_visit{
+    font-size: 1.2vw;
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 1vw 2vw 1vw 2vw;
+    transition: 0.5s;
+}
+
+.creators_visit:hover{
+    box-shadow: 0.6vw 0.6vw 15px black;
+}
+
+.creators_visit:active{
+    color: black;
+}
+
+@media screen and (min-width: 1024px){
+    .text-big-white{
+        font-size: 2.2vw;
+    }
+
+    .text-small-gray{
+        font-size: 1.3vw;
+    }
+
+    .gameplay-intro_element{
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .gameplay-intro_element{
+        align-items: center;
+    }
+}
+@media screen and (min-width:320px) and (max-width:426px){
+    .VISIT{
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    .partners-discription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    }
+
+    .partners-discription div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .partners-discription p{
+        text-align: center;
+        font-size: 13px;
+        font-weight: 200;
+    }
+
+    .partners-discription-button{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50px;
+    }
+
+    .partners-discription-button_button{
+        height: 100%;
+        font-size: 14;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:1440px){
+    .partners-discription{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    .partners-discription img{
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .partners-discription p{
+        display: flex;
+        justify-content: center;
+        height: 20%;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 200;
+
+    }
+
+    .partners-discription-button{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:20px;
+        margin-bottom: 10px;
+
+    }
+    .partners-discription-button_button{
+        background-color: white;
+        color: black;
+        height: 100%;
+        width: 100%;
+        max-width: 212px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14;
+        font-weight: 400;
+
+        
+    }
+}
+@media screen and (min-width: 390px) and (max-width: 768px){
+    .text-big-white{
+        font-size: 3.7vw;
+    }
+
+    .text-small-gray{
+        font-size: 1.8vw;
+    }
+
+    .gameplay-intro_text{
+        gap: 2vw;
+    }
+
+    .text-medium-gray{
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .other-sites a{
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .gameplay-intro_element{
+        flex-direction: column !important;
+    }
+
+    .gameplay-intro_element img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .gameplay-intro_text{
+        width: 100%;
+    }
+
+    .text-big-white{
+        font-size: 6vw;
+    }
+
+    .text-small-gray{
+        font-size: 3.3vw;
+    }
+
+    .text-medium-gray{
+        font-size: 4vw;
+    }
+
+    .text-title{
+        font-size: 8vw;
+        margin-bottom: 50px !important;
+    }
+
+    .gameplay-intro{
+        margin-top: 50px;
+    }
+
+    .gameplay-intro_text{
+        gap: 3vw;
+    }
+
+    .gameplay-intro_content{ 
+        gap: 40px !important;
+    }
+
+    .hollow-knight-youtube{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .content-packs_content{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .content-packs_content div{
+        width: 100%;
+    }
+
+    .orchestral-score{
+        flex-direction: column-reverse;
+        gap: 3vw;
+    }
+
+    .orchestral-score div,
+    .orchestral-score img{
+        width: 100%;
+    }
+
+    .white-button{
+        font-size: 4.8vw;
+        padding: 4vw 8vw 4vw 8vw;
+    }
+
+    .our-friends_options{
+        flex-direction: column;
+    }
+
+    .our-friends_options div{
+        width: 90%;
+        gap: 4vw;
+    }
+
+    .press-coverage_our-awards{
+        width: 100%;
+    }
+
+    .our-awards{
+        flex-direction: column-reverse;
+    }
+
+    .our-awards img{
+        width: 100%;
+    }
+
+    .orchestral-score{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .our-friends{
+        margin-top: 80px;
+    }
+
+    .press-coverage{
+        margin-top: 60px;
+    }
+
+    .press-coverage_press-kit{
+        flex-direction: column;
+        width: 88%;
+        gap: 50px;
+        margin-top: 70px;
+    }
+
+    .press-coverage_press-kit div{
+        width: 100%;
+        gap: 10vw;
+    }
+
+    .press-coverage_press-kit img{
+        width: 100%;
+    }
+    .creators_description{
+        width: 90%;
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .creators_creators{
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .creators_creators div p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .creators_visit{
+        font-size: 4.8vw;
+        padding: 4vw 8vw 4vw 8vw;
+    }
+
+    .creators_creators{
+        gap: 50px;
+    }
+}
